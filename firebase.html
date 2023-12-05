@@ -32,17 +32,17 @@
             const database = getDatabase(app);
 
             window.crearRegistro = function () {
-                const nombre = document.getElementById("nombre").value
-                const edad = document.getElementById("edad").value
-                console.log(nombre,edad)
+                const nombre = document.getElementById("nombre").value;
+                const edad = document.getElementById("edad").value;
+                console.log(nombre, edad);
+                
                 push(
-                    ref(database, 'conexion'),
+                    ref(database, 'septimo'),
                     {
                         name: nombre,
-                        age: edad
+                        age: edad 
                     }
-                )
-            }
+                );
           </script>
     </body>
 </html>
